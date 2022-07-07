@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import { Button } from "ui";
 import { io } from "socket.io-client";
 
-const socket = io("http://192.168.0.71:3001", { transports: ["websocket"] });
+const socket = io("https://chat-app-server-tau.vercel.app/", {
+  transports: ["websocket"],
+});
 export default function Web() {
   const [chat, setChat] = useState<string[]>([]);
   const [inputValue, setInputValue] = useState("");

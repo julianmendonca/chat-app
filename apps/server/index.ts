@@ -10,7 +10,11 @@ const io = new Server(server);
 
 app.use(
   cors({
-    origin: ["http://192.168.0.71:3000", "http://localhost:3000"],
+    origin: [
+      "http://192.168.0.71:3000",
+      "http://localhost:3000",
+      "https://chat-app-fe-zeta.vercel.app/",
+    ],
   })
 );
 
