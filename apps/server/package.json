@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx tsc --project ./",
+    "start": "node index.js",
+    "dev": "nodemon index.ts"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "http": "^0.0.1-security",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1",
+    "ts-node": "^10.8.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.0.3",
+    "concurrently": "^7.2.2",
+    "eslint": "7.32.0",
+    "eslint-config-custom": "*",
+    "nodemon": "^2.0.19",
+    "tsconfig": "*",
+    "typescript": "^4.7.4"
+  }
+}
